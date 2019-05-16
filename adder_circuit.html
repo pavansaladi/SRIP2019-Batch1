@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+.column2 {
+  float: left;
+  width: 65%;
+  padding: 10px;
+  height: 600px;
+  }
+.column3 {
+  float: left;
+  width: 10% ;
+  padding: 10px;
+  height: 600px;
+  }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.block {
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 5px 40px;
+  font-size: 16px;
+  background-color:#bbb;
+  text-align: center;
+  margin-right: 4%;
+  margin-left: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%
+}
+.button {
+  border: none;
+  color: black;
+  padding: 5px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="column1" style="background-color:#aaa;">
+    <h2>Basic Elements</h2>
+    <div style="display:block; margin-right: 5%; margin-left: 5%;">
+        <select>
+        	<option></option>
+            <option>XNOR</option>
+            <option>AND</option>
+            <option>OR</option>
+            <option>XOR</option>
+            <option>NAND</option>
+            <option>NOT</option>
+            <option>CONN</option>
+            <option>NOR</option>
+        </select>
+        <select>
+        	<option></option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+       </select>
+   </div>
+   <div>
+   <button type="button" class="block">Select</button>
+   </div>
+   <button class="button">Probe</button>
+   <input type="button" class="button" value="Out">
+   <div>
+   <button type="button" class="block">None</button>
+   </div>
+   <div>
+   <button type="button" class="block">Delete Element</button>
+   </div>
+   <div>
+   <button type="button" class="block">DISCONNECT</button>
+   </div>
+   <div>
+   <button type="button" class="block">CONNECT</button>
+   </div>
+   <div>
+   <button type="button" class="block">Naming</button>
+   </div>
+   <div style="width:250px;height:150px;border:1px solid #000;text-align: center; vertical-align: top;">Selected icon</div>
+	</div>
+  <div class="column2" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+
+  <div class="column3" style="background-color:#aaa;">
+    
+  </div>
+</div>
+
+</body>
+</html>
