@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="test.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="gate.js">
+  </script>
+</head>
+<body>
+<div class="row">
+  <div class="column1" style="background-color:#aaa; border:1px solid black">
+    <h2 style="margin-left: 8px;">Basic Elements</h2>
+    <div style="display:block;">
+        <select id="list1" style="margin-left: 8px; margin-right: 16px;">
+        	<option></option>
+            <option value=1>AND</option>
+            <option value=2>OR</option>
+            <option>XOR</option>
+            <option>NAND</option>
+            <option>NOT</option>
+            <option>CONN</option>
+            <option>NOR</option>
+        </select>
+        <select id="list2" style="margin-left: 32px;">
+        	<option></option>
+            <option value=1>2</option>
+            <option value=2>3</option>
+       </select>
+   </div>
+   <div>
+    <button onclick="myFunction1()" class="block" style="margin-left: 8px;">Select</button>
+   </div>
+   <button class="button" style="margin-left: 8px; margin-right: 16px;">Probe</button>
+   <button class="button">Out</button>
+   <div>
+   <button type="button" class="block" style="margin-left: 8px;">None</button>
+   </div>
+   <div>
+   <button type="button" class="block" style="margin-left: 8px;">Delete Element</button>
+   </div>
+   <div>
+   <button type="button" class="block" style="margin-left: 8px;">DISCONNECT</button>
+   </div>
+   <div>
+   <button type="button" class="block" style="margin-left: 8px;">CONNECT</button>
+   </div>
+   <div class="image" style="width:229px;height:150px;border:1px solid #000;text-align: center; vertical-align: top; margin-left: 8px;">
+    <img id="myImg1" src= " " ondblclick="myFunction2()" >
+   </div>
+   <div>
+     <h3 style="margin-left: 8px;">Inputs</h3>
+     <button class="button" style="margin-left: 8px;">0</button>
+     <button class="button">1</button>
+     <button class="button" style="margin-left: 8px;">New Time Pulse</button>
+   </div>
+	</div>
+  <div class="column2" style="background-color:#bbb; border:1px solid black">
+    <div class ="row1">
+    	<button class="button">Load</button>
+      <button class="button">import</button>
+      <button class="button">Save</button>
+      <button class="button">Clear</button>
+      <button class="button">Load_it</button>
+      <button class="button">Import_it</button>
+      <button class="button">Simulate</button>
+      <select>
+          <option>FUll_Adder</option>
+            <option>4_Bit_Adder</option>
+      </select>
+    </div>
+    <div class="row2">
+    	<h4>Make 4 bit adder circuit with the help of 1 bit adder circuit</h4 >
+    </div>
+    <div id="row3" class="row3">
+      <img id="myImg2" src= " " style="margin-left: 125px; margin-top: 100px" >
+    	
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
